@@ -1,9 +1,12 @@
 #include <stdio.h>
+
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 int main(void)
 {
-	/*declare variables and initializeit with the first member of 
-       the range [a - z] */
 	int i;
+
 	i = 97;
 	while (i <= 122)
 	{
