@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet in lowercase
- * Return: Always 0
+ * _isupper - find uppercase
+ *
+ * @c: Is a character to check
+ *
+ * Return: 1 if is upper 0 otherwise
  */
 
 int _isupper(int c)
