@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- *2-mul.c - multiplies two digits
+ * mul - multiplies two integers
  *
- *@a,@b digits to multiply
+ * @a: is a first number to multiplie
+ * @b: is a seconde number to multiplie
  *
- *return the result of a*b
-*/
+ * Return: The result of multiplication
+ */
+
 int mul(int a, int b)
 {
 	return (a * b);
