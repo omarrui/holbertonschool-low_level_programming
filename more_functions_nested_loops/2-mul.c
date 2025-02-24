@@ -3,7 +3,7 @@
 /**
  *2-mul.c - multiplies two digits
  *
- *a,b digits to multiply
+ *@a,@b digits to multiply
  *
  *return the result of a*b
 */
