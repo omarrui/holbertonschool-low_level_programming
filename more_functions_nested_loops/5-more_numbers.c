@@ -3,8 +3,6 @@
 /**
  * more_numbers - Prints numbers from 0 to 14.
  *
- *
- * Description: Uses _putchar to print numbers.
  * Return: void
  */
 
