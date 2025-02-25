@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_most_numbers - Prints numbers from 0 to 14.
+ * more_numbers - Prints numbers from 0 to 14.
+ *
  *
  * Description: Uses _putchar to print numbers.
  * Return: void
