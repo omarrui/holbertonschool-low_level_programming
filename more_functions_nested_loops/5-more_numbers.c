@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *printing numbers 1 -14
+ * print_most_numbers - Prints numbers from 0 to 14.
  *
- *Description: only uses putchar 3 times
- *retutn void
-*/
+ * Description: Uses _putchar to print numbers.
+ * Return: void
+ */
 
 void more_numbers(void)
 {
