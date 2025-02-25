@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- *4-print_most_numbers will  print numbers (1-9) except 2-4
+ * print_most_numbers - Prints numbers from 0 to 9 except 2 and 4.
  *
- *@n :numbers
- *
- *prints numbers except 2-4
-*/
+ * Description: Uses _putchar to print numbers.
+ * Return: void
+ */
 void print_most_numbers(void)
 {
 	char n;
