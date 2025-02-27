@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * strlen - would tell us the length of a string
- * @: Pointer to second integer
+ * _strlen - Returns the length of a string.
+ * @s: The string to measure.
+ *
+ * Return: The length of the string.
  */
+
 int _strlen(char *s)
 {
 	int length = 0;
