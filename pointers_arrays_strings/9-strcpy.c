@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * strcpy: copies the string into ptr
- *
- *@src gonna be coppied
- *@dest is where we gonna transfer our code
- *
- *Return char
+* _strcpy - Copies the string pointed
+*
+* @dest: Destination of string
+* @src: String to copie
+*
+* Return: dest variable.
 */
 char *_strcpy(char *dest, char *src)
 {
@@ -17,5 +17,5 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
