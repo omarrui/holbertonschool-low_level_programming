@@ -20,7 +20,7 @@ char *cap_string(char *str)
 		if (capitalize_next && str[i] >= 'a' && str[i] <= 'z')
 			str[i] -= 32;
 		capitalize_next = 0;
-		for (j = 0; seperators[j] !='\0'; j++)
+		for (j = 0; seperators[j] != '\0'; j++)
 		{
 			if (str[i] == seperators[j])
 			{
