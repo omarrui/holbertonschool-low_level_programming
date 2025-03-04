@@ -2,22 +2,23 @@
 #include <stddef.h>
 
 /**
- *_strchr will only print the characters in s from c to the rest
- *@s string to search
- *@c the letter to allocate
- *
- *return string that starts from the char c
+* _strchr - Locates a character in a string.
+*
+* @s: String to browse.
+* @c: Charater to find.
+*
+* Return: Pointer to the first occurence of character in a string,
+* or NULL if it not found.
 */
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
-
-	for (i = 0;s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (s[i] == c )
-		return (&s[i]);
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	if (s[i] == c)
-		return (s + i);
+	if (c == '\0')
+		return (s);
 	return (NULL);
 }
