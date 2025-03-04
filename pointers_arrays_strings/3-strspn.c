@@ -1,33 +1,34 @@
 #include "main.h"
 
 /**
-* _strcmp - Compares two string.
+* _strspn - Gets the length of a prefix substring.
 *
-* @s1: First string.
-* @s2: Second string.
+* @s: String to browse.
+* @accept: Byte to count.
 *
-* Return: Negative value if s1 is less than s2
-* else positive value
+* Return: Counter.
 */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
 
-	int result = 0;
+	unsigned int count = 0;
 
-	while (s1[i] || s2[i])
+	while (*s)
 	{
-		if (s1[i] == '\0' && s2[i] == '\0')
+		i = 0;
+		while (accept[i])
 		{
-			result = s1[i] - s2[i];
-			return (result);
+			if (accept[i] == *s)
+			{
+				count++;
+				break;
+			}
+			i++;
 		}
-		else if (s1[i] > s2[i] || s1[i] < s2[i])
-		{
-			result = s1[i] - s2[i];
-			return (result);
-		}
-		i++;
+		if (accept[i] == '\0')
+			return (count);
+		s++;
 	}
-	return (0);
+	return (count);
 }
