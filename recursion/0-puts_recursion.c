@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
-* _puts_recursion - That Prints a string followed by a new line.
-*
-* @s: String to print.
-*
-* Return: Void.
-*/
+ * _puts_recursion - description of template
+ * @s: input value
+ * Return: x
+ */
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
