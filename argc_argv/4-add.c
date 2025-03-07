@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
 * main - Fonction main.
@@ -7,27 +8,39 @@
 * @argc: Size of array.
 * @argv: Array.
 *
-* Return: Always 0.
+* Return: Alway 0.
 */
 int main(int argc, char *argv[])
 {
-	int result;
+	int i;
 
-	int produit;
+	int j;
 
-	int facteur;
+	int result = 0;
 
-	if (argc == 3)
+	int num;
+
+	if (argc <= 1)
 	{
-		produit = atoi(argv[1]);
-		facteur = atoi(argv[2]);
-		result = produit * facteur;
-		printf("%d\n", result);
+		printf("%d\n", 0);
+		return (0);
 	}
-	else
+	if (argc > 1)
 	{
-		printf("Error\n");
-		return (1);
+		for (i = 1; i < argc; i++)
+		{
+			for (j = 0; argv[i][j] != '\0'; j++)
+			{
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			num = atoi(argv[i]);
+			result += num;
+		}
+	    printf("%d\n", result);
 	}
 	return (0);
 }
