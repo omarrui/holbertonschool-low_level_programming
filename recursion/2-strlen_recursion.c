@@ -4,7 +4,7 @@
  *
  * @s : is the string we gonna be counting
  *
- * Return : lrn of yhe str
+ * Return: lrn of yhe str
 */
 
 int _strlen_recursion(char *s)
