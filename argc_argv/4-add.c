@@ -2,26 +2,32 @@
 #include <stdlib.h>
 
 /**
-* main - main function
+* main - Fonction main.
 *
-* @argc: size of array
-* @argv: content of array
+* @argc: Size of array.
+* @argv: Array.
 *
-* Return: 0
+* Return: Always 0.
 */
 int main(int argc, char *argv[])
 {
-	int num1, num2;
+	int result;
 
-	if (argc != 3)
+	int produit;
+
+	int facteur;
+
+	if (argc == 3)
+	{
+		produit = atoi(argv[1]);
+		facteur = atoi(argv[2]);
+		result = produit * facteur;
+		printf("%d\n", result);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-
-	printf("%d\n", num1 + num2);
 	return (0);
 }
