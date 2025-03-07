@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strlen_recursion : will count how many ch are in the string
+ * _strlen_recursion - will count how many ch are in the string
  *
- * @s: is the string we gonna be counting
+ * @s : is the string we gonna be counting
  *
- * return: lrn of yhe str
+ * Return : lrn of yhe str
 */
 
 int _strlen_recursion(char *s)
