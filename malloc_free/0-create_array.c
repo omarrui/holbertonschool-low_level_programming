@@ -1,26 +1,32 @@
+#include "main.h"
+#include <stddef.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * create_array - Creates an array of charts and initializes it with a specidic cahr
- * @size : the size of the array
- * @c: the ch to initialize the array with 
- *
- * Return: a pointer to the array, or null if the size is 0 or memo allocation fails
+* create_array - creates an array of cahrs,
+* and initializes it with a specific char.
+*
+* @size: Size of array.
+* @c: Char to add.
+*
+* Return: Array with new char.
 */
-
 char *create_array(unsigned int size, char c)
 {
-	char *arr;
-	unsigned int i;
+	char *array;
+
+	unsigned int i = 0;
 
 	if (size == 0)
 		return (NULL);
-
-	arr = malloc(size * sizeof(char));
-	if (arr == null)
-		return(NULL);
-
-	for (i = 0; i < size; i++)
-		arr[i] = c;
-	return (arr);
+	array = malloc(size * sizeof(char));
+	if (array == NULL)
+		return (NULL);
+	while (i < size)
+	{
+		array[i] = c;
+		i++;
+	}
+	return (array);
 }
