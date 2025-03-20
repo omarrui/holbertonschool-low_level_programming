@@ -4,9 +4,9 @@
 /**
 * sum_them_all - That returns the sum of all its parameters.
 *
-* @n: Constante number to calcul.
+* @n: Constant number to calcul.
 *
-* Return: Integer of the sum.
+* Return: sum.
 */
 int sum_them_all(const unsigned int n, ...)
 {
