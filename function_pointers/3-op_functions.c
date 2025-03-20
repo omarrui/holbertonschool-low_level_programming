@@ -1,11 +1,15 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
-* op_add - adds a nd b
+* op_add - That adds two number
 *
-* @a: the fitdt int
-* @b: is the 2nd int
+* @a: first number to add
 *
-* Return: a+b
+* @b: Second number to add
+*
+* Return: a + b
 */
 int op_add(int a, int b)
 {
@@ -13,10 +17,11 @@ int op_add(int a, int b)
 }
 
 /**
-* op_sub - subtract a from b
+* op_sub - Return the difference between a and b
 *
-* @a: is 1st int
-* @b: is 2nd int
+* @a: first number to add
+*
+* @b: Second number to add
 *
 * Return: a - b
 */
@@ -26,10 +31,11 @@ int op_sub(int a, int b)
 }
 
 /**
-* op_mul - multiplies a by b
+* op_mul - Return the product of a and b
 *
-* @a: 1st int
-* @b: 2nd iny
+* @a: first number to add
+*
+* @b: Second number to add
 *
 * Return: a * b
 */
@@ -39,26 +45,39 @@ int op_mul(int a, int b)
 }
 
 /**
-* op_div - divides a by b
+* op_div - Return the result of the division of a and b
 *
-* @a: 1st int
-* @b: 2nd int
+* @a: first number to add
 *
-* Return: a/b
+* @b: Second number to add
+*
+* Return: a / b
 */
 int op_div(int a, int b)
 {
+	if (a == 0 || b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a / b);
 }
 
 /**
-* op_mod - finds the rest of a devided by b
-* @a: 1st int
-* @b: 2nd int
+* op_mod - Return the remainder of the division of a and b
+*
+* @a: first number to add
+*
+* @b: Second number to add
 *
 * Return: a % b
 */
 int op_mod(int a, int b)
 {
+	if (a == 0 || b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a % b);
 }

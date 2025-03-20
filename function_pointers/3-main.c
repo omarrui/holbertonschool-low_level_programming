@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("error⑊n");
-		exit(98);
+		return (98);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
@@ -30,12 +30,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(99);
-	}
-
-	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
 	}
 
 	result = operation(num1, num2);
