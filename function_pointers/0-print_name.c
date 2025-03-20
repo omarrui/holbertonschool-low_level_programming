@@ -2,13 +2,11 @@
 #include <stddef.h>
 
 /**
-* print_name - prints a name.
-*
-* @name: Name of the person.
-* @f: Void function.
-*
-* Return: Always void.
-*/
+ * print_name - prints a name as is
+ * @name: name of the person
+ * @f: coucou
+ * Return: Nothing.
+ */
 void print_name(char *name, void (*f)(char *))
 {
 	if (f != NULL && name != NULL)
