@@ -1,5 +1,5 @@
 #ifndef LISTS_H
-#define LISTS_h
+#define LISTS_H
 #include <stddef.h>
 /**
  * struct lists_s -singly linked list
@@ -9,7 +9,7 @@
  * 
  * Description: single linked list node structure 
  */
-typedef struct lists_s
+typedef struct list_s
 {
     char *str;
     unsigned int len;
