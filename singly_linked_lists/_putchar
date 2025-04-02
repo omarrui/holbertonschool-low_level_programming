@@ -1,0 +1,13 @@
+#include <unistd.h>
+
+/**
+ * _putchar -  writes the ch c to stout
+ * 
+ * @c: the ch to print
+ * 
+ * Return: 1 on success or -1 on error and errno is set appropriatletly
+ */
+int _putchar(char c)
+{
+    return(write(1, &c, 1));
+}
