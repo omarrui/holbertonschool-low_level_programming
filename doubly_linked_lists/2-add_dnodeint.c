@@ -2,28 +2,29 @@
 #include <stdlib.h>
 
 /**
- * add dnodeint - addds a node at the begining of the list
- * 
- * @head: address do the first list
- * @n: number to print
- * 
- * Return: hte addres of new elements 
- */
+* add_dnodeint - that adds a new node at the beginning of a list
+*
+* @head: address of a list
+* @n: number to print
+*
+* Return: the address of the new elements, or NULL if it failed
+*/
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-    dlistint_t *new;
+	dlistint_t *new;
 
-    new = malloc(sizeof(dlistint_t));
-    if (new == NULL)
-        return (NULL);
-    new->n = n;
-    new->prev = NULL;
-    new->next = (*head);
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
 
-    if (*head != NULL)
-        (*head)->prev = new;
-    
-    (*head) = new;
+	new->n = n;
+	new->prev = NULL;
+	new->next = (*head);
 
-    return (new);
+	if (*head != NULL)
+		(*head)->prev = new;
+
+	(*head) = new;
+
+	return (new);
 }
